@@ -1,0 +1,13 @@
+#maintopic{
+    color: aqua;
+}
+*{
+    text-align: center;
+}
+h1,h3,h5{
+    font-family: Georgia;
+}
+.content{
+    color: white;
+    background-color: rgb(10, 18, 34);
+}

@@ -1,0 +1,9 @@
+div{
+    background-color: yellow;
+}
+input{
+    background-color: inherit;     /* ye apne parent se property inherit nhi krte isliye inherit likhna padata h*/
+}
+button{
+    background-color:inherit ;
+}

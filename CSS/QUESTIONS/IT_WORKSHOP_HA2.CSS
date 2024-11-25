@@ -1,0 +1,68 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Georgia;
+  }
+  
+  .background {
+    background-image: url('https://img.freepik.com/free-photo/programming-background-collage_23-2149901782.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707868800&semt=ais');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+  }
+ h1 ::first-letter{
+   color: #007bff;
+ }
+  
+  .overlay{
+    background-color: wheat;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 650px;
+   margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  #registration-form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+   
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    
+  }
+  
+  button:hover {
+    background-color: #b30051;
+  }
+  
+  
+  
+ 
+  

@@ -1,0 +1,50 @@
+.mainbox{
+    position:relative;
+    margin: auto;
+
+    background-image: url(clock\ Image.jpg) ;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    height: 45vw;
+    width:45vw;
+}
+#sec ,#hrs, #min{
+    position: absolute;
+    transform-origin: bottom;
+   background-color: rgb(16, 14, 14);
+   border-radius: 5px;
+}
+#sec{
+  height:18vw;
+  width:0.5vw;
+   margin-top: 10%;
+   margin-left: 48.5%;
+  
+}
+#min{
+  height:16vw;
+  width:0.6vw;
+   margin-top: 14%;
+   margin-left: 48.5%;
+  
+}
+
+
+#hrs{
+height:14vw;
+  width:0.7vw;
+   margin-top: 19%;
+   margin-left: 48.5%;
+  
+}
+.centre{
+    
+    position: fixed;
+    height:4vw;
+    width:4vw;
+    background-color: black;
+    margin-top: 20%;
+    margin-left: 20%;
+    border-radius: 50%;
+}

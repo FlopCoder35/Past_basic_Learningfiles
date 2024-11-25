@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webpage Layout</title>
+<style>
+    body {
+        margin: 0;
+       
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+    }
+
+    header, footer {
+        background-color:wheat;
+        color:black;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+   
+
+ .content {
+       background-image:url(' https://cdn.wallpapersafari.com/87/24/D6m1np.jpg');
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        height: calc(100vh - 160px); /* Adjusted for header and footer height */
+         position: relative; 
+    } 
+
+    .content div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        background-size: cover;
+        opacity: 5;
+        position: relative;
+        z-index: 1;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .content div:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .content .div1 {
+        background-image: url('https://wallpapers.com/blog/wp-content/uploads/2023/06/Web-development-concept-with-person-using-a-laptop-computer.jpeg');
+    }
+
+    .content .div2 {
+        background-image: url('https://st4.depositphotos.com/11486624/24595/i/450/depositphotos_245957612-stock-photo-digital-media-mobile-player-sign.jpg');
+    }
+
+    .content .div3 {
+        background-image: url('https://static3.bigstockphoto.com/9/5/1/large1500/15987338.jpg');
+    }
+
+    .sticky {
+       
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 2;
+        background-color: wheat;
+        color: blue;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Navbar</h1>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="sticky">Sticky Div</div>
+</div>
+
+<footer>
+    &copy; 2024 My Website
+</footer>
+
+</body>
+</html>

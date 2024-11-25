@@ -1,0 +1,41 @@
+*{
+    font-family: 'Courier New';
+}
+#login{
+    background-color: white;
+}
+#signup{
+    color:white;
+    background-color: #b29bb2;
+}
+.btn{
+    background-color: aqua;
+}
+/* descendant selector*/
+nav ul li a{
+    color:red;
+}
+.x a{
+    color: bisque;
+    background-color:yellowgreen;    /*  class x ke ander jitne a tag h sabka col &backcol set kr do*/
+}
+
+/* adjacent sibling*/
+p+h3{
+    text-decoration:dotted underline;
+}
+.btn + button{
+    background-color: rgb(255, 127, 234);
+    color:blue;
+}
+/* child combinator */
+div>input{
+    background-color: beige;
+}
+    /* ATTRIBUTE SELECTOR */
+input[type="password"]{
+    color:aqua;
+}
+input[type]{
+    background-color: ghostwhite;
+}

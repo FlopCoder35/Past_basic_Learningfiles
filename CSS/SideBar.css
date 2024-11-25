@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+   color: white;
+ 
+   
+}
+.wholepage{
+  
+  background-image: url(photo.jpg);
+}
+.main_box{
+    height:100vh;
+    width:300px;
+    /* background-color:white; */
+    box-shadow: 2px 2px 10px greenyellow;
+    animation-name: nitesh;
+
+   
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sidebar {
+  display: none;
+  animation: slideInFromLeft 1s ease forwards; /* Apply the animation */
+}
+
+.logo{
+  
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
+ 
+ 
+}
+.sidebar a {
+  text-decoration: none;
+}
+.logo_container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  border:solid black;
+  box-shadow: 2px 2px 10px rgb(23, 169, 130);
+}
+.btn_two{
+  position: absolute;
+  margin-bottom: 20px;
+}
+.btn_one,
+.btn_two {
+    font-size: 30px; /* Increase the font size for the bars */
+    height: 10px;
+    width: 10px;
+}
+.btn_one:hover i,
+.btn_two:hover i {
+  transform: scale(1.2); /* Increase the scale on hover */
+  cursor: pointer;
+}
+
+.btn_one{
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 50px;
+}
+.menu{
+  margin:20px;
+}
+li{
+  margin:20px;
+  font-size: 30px;
+}
+i{
+  position: absolute;
+  margin-right: 20px;
+  height:2px;
+  width:2px;
+}
+a{
+  margin-left: 50px;
+}
+.social_media{
+  position: absolute;
+  margin-top: 50px;
+ 
+
+}
+.sidebar {
+  display: none;
+
+}
+#check:checked ~ .main_box .sidebar {
+  display: block;
+}
+#check:checked ~ .main_box .btn_one {
+  display: none;
+}
+#check{
+  display: none;
+}
+.social_media i{
+  font-size: 40px;
+  
+}
